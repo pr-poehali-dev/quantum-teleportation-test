@@ -7,13 +7,18 @@ export function Footer2() {
       <div className="container px-6 mx-auto flex flex-col gap-12 lg:gap-16">
         <div className="flex flex-col gap-12">
           <div className="flex flex-col lg:flex-row md:justify-between gap-12">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 max-w-xs">
               <a href="/" aria-label="На главную">
                 <Logo />
               </a>
-              <p className="text-muted-foreground text-sm max-w-xs">
-                Муниципальная некоммерческая организация — микрокредитная компания. Поддержка малого и среднего предпринимательства г. Таганрога с 1995 года.
+              <p className="text-muted-foreground text-sm">
+                Муниципальная некоммерческая организация — микрокредитная компания. Поддержка МСП г. Таганрога с 1995 года.
               </p>
+              <div className="flex flex-col gap-2 text-sm text-muted-foreground">
+                <a href="tel:88634384084" className="hover:text-foreground transition-colors">8 (8634) 38-40-84</a>
+                <a href="mailto:fond-tagan@yandex.ru" className="hover:text-foreground transition-colors">fond-tagan@yandex.ru</a>
+                <p>ул. Петровская, 46, г. Таганрог</p>
+              </div>
             </div>
 
             <div className="flex flex-col md:flex-row gap-12">
@@ -28,11 +33,21 @@ export function Footer2() {
               </div>
 
               <div className="flex flex-col gap-4">
-                <p className="font-semibold text-foreground text-sm">Контакты</p>
-                <div className="flex flex-col gap-3">
-                  <p className="text-muted-foreground text-sm">г. Таганрог</p>
-                  <a href="#faq" className="text-muted-foreground hover:text-foreground transition-colors text-sm">Частые вопросы</a>
+                <p className="font-semibold text-foreground text-sm">Навигация</p>
+                <nav className="flex flex-col gap-3" aria-label="Навигация">
+                  <a href="#how" className="text-muted-foreground hover:text-foreground transition-colors text-sm">О фонде</a>
+                  <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors text-sm">Отзывы</a>
+                  <a href="#faq" className="text-muted-foreground hover:text-foreground transition-colors text-sm">Вопросы и ответы</a>
                   <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors text-sm">Подать заявку</a>
+                </nav>
+              </div>
+
+              <div className="flex flex-col gap-4">
+                <p className="font-semibold text-foreground text-sm">Режим работы</p>
+                <div className="flex flex-col gap-2 text-sm text-muted-foreground">
+                  <p>Пн–Чт: 9:00–18:00</p>
+                  <p>Пт: 9:00–17:00</p>
+                  <p>Сб–Вс: выходной</p>
                 </div>
               </div>
             </div>

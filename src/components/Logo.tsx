@@ -8,8 +8,8 @@ export function Logo() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M9 22V12h6v10" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="hsl(var(--primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M9 22V12h6v10" stroke="hsl(var(--primary))" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
       <span className="text-base font-bold text-foreground leading-tight">
         Фонд поддержки<br/>
