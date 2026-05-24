@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 const services = [
   {
@@ -73,9 +74,19 @@ export function PricingSection4() {
                     </p>
                   </div>
 
-                  <Button variant={index === 1 ? "secondary" : "default"} className="w-full" asChild>
-                    <a href="#contact">{service.cta}</a>
-                  </Button>
+                  <div className="flex flex-col gap-2">
+                    <Button variant={index === 1 ? "secondary" : "default"} className="w-full" asChild>
+                      <a href="#contact">{service.cta}</a>
+                    </Button>
+                    {index === 0 && (
+                      <Button variant="ghost" size="sm" className="w-full" asChild>
+                        <a href="/microloan">
+                          Подробные условия
+                          <Icon name="ArrowRight" size={14} className="ml-1" />
+                        </a>
+                      </Button>
+                    )}
+                  </div>
                 </div>
 
                 <div className="space-y-4">

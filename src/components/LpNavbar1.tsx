@@ -4,10 +4,10 @@ import { Menu, X } from "lucide-react"
 import { useState } from "react"
 
 const MENU_ITEMS = [
-  { label: "О Фонде", href: "#about" },
-  { label: "Услуги", href: "#features" },
-  { label: "Новости", href: "#news" },
-  { label: "Вопросы", href: "#faq" },
+  { label: "О Фонде", href: "#about", external: false },
+  { label: "Микрозаймы", href: "/microloan", external: false },
+  { label: "Новости", href: "#news", external: false },
+  { label: "Вопросы", href: "#faq", external: false },
 ] as const
 
 interface NavMenuItemsProps {
