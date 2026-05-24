@@ -15,10 +15,10 @@ export function Footer2() {
                 Муниципальная некоммерческая организация — микрокредитная компания. Поддержка МСП г. Таганрога с 1995 года.
               </p>
               <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-                <a href="tel:88634384084" className="hover:text-foreground transition-colors">8 (8634) 38-40-84</a>
-                <a href="tel:88634387010" className="hover:text-foreground transition-colors">8 (8634) 38-70-10</a>
-                <a href="mailto:fond-tagan@yandex.ru" className="hover:text-foreground transition-colors">fond-tagan@yandex.ru</a>
-                <p>ул. Петровская, 46а, г. Таганрог</p>
+                <a href="tel:78634391891" className="hover:text-foreground transition-colors">+7 (8634) 391-891</a>
+                <a href="tel:78634611229" className="hover:text-foreground transition-colors">+7 (8634) 611-229</a>
+                <a href="mailto:391-891@mail.ru" className="hover:text-foreground transition-colors">391-891@mail.ru</a>
+                <p>пер. Гоголевский, 27, офис 1, г. Таганрог</p>
               </div>
             </div>
 
@@ -36,7 +36,8 @@ export function Footer2() {
               <div className="flex flex-col gap-4">
                 <p className="font-semibold text-foreground text-sm">Навигация</p>
                 <nav className="flex flex-col gap-3" aria-label="Навигация">
-                  <a href="#how" className="text-muted-foreground hover:text-foreground transition-colors text-sm">О фонде</a>
+                  <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors text-sm">О фонде</a>
+                  <a href="#news" className="text-muted-foreground hover:text-foreground transition-colors text-sm">Новости</a>
                   <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors text-sm">Отзывы</a>
                   <a href="#faq" className="text-muted-foreground hover:text-foreground transition-colors text-sm">Вопросы и ответы</a>
                   <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors text-sm">Подать заявку</a>

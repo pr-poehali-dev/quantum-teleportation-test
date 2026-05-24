@@ -4,9 +4,9 @@ import { Menu, X } from "lucide-react"
 import { useState } from "react"
 
 const MENU_ITEMS = [
+  { label: "О Фонде", href: "#about" },
   { label: "Услуги", href: "#features" },
-  { label: "О фонде", href: "#how" },
-  { label: "Отзывы", href: "#testimonials" },
+  { label: "Новости", href: "#news" },
   { label: "Вопросы", href: "#faq" },
 ] as const
 
