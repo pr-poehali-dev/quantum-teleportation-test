@@ -1,39 +1,46 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
-import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 export function HeroSection7() {
   return (
     <section className="bg-muted pattern-1 py-16 lg:py-24" aria-labelledby="hero-heading">
       <div className="container px-6 flex flex-col items-center gap-12 lg:gap-16 mx-auto">
-        <div className="flex gap-12 lg:gap-16">
-          <div className="flex flex-col lg:flex-row gap-4 md:gap-6 lg:gap-8">
-            <h1 id="hero-heading" className="text-foreground text-3xl lg:text-5xl font-bold flex-1">
-              Работай умнее, а не больше со <span className="text-primary">СмарФлоу</span>
-            </h1>
-            <div className="flex-1 w-full flex flex-col gap-8">
-              <p className="text-muted-foreground text-base lg:text-lg">
-                Автоматизируй рабочие процессы, упрощай задачи и работай в команде без лишних усилий. Все инструменты в одной платформе для максимальной продуктивности.
-              </p>
-
-              <div className="flex flex-col lg:flex-row gap-3">
-                <Button>Попробовать бесплатно</Button>
-                <Button variant="ghost">
-                  Узнать больше
-                  <ArrowRight className="ml-2" />
-                </Button>
-              </div>
-            </div>
+        <div className="flex flex-col items-center text-center gap-6 max-w-3xl">
+          <span className="text-sm font-semibold text-primary bg-primary/10 px-4 py-1.5 rounded-full">
+            Основан в 1995 году · Таганрог
+          </span>
+          <h1 id="hero-heading" className="text-foreground text-3xl lg:text-5xl font-bold">
+            Поддержка малого и среднего{" "}
+            <span className="text-primary">бизнеса Таганрога</span>
+          </h1>
+          <p className="text-muted-foreground text-base lg:text-lg max-w-2xl">
+            Фонд поддержки предпринимательства — ваш надёжный партнёр с 1995 года. Микрозаймы, бесплатные консультации, бизнес-инкубатор и центр поддержки технологического предпринимательства.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Button size="lg" asChild>
+              <a href="#contact">Получить микрозайм</a>
+            </Button>
+            <Button variant="ghost" size="lg" asChild>
+              <a href="#features">
+                Узнать об услугах
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
+            </Button>
           </div>
         </div>
-        <div className="w-full overflow-hidden rounded-xl border bg-background shadow-xl">
-          <AspectRatio ratio={16 / 9}>
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero%20image-BfDDyqA7gEJi5nCcYfKEbZOJR8pYrr.png"
-              alt="Интерфейс СмартФлоу со статистикой заказов и метриками доходов"
-              className="object-cover w-full h-full"
-            />
-          </AspectRatio>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-3xl">
+          {[
+            { value: "29+", label: "лет на рынке" },
+            { value: "1000+", label: "предпринимателей помогли" },
+            { value: "0%", label: "комиссия за консультации" },
+            { value: "2024", label: "открыт IT-центр" },
+          ].map((stat) => (
+            <div key={stat.label} className="flex flex-col items-center gap-1 bg-background rounded-xl p-5 shadow-sm border">
+              <span className="text-3xl font-bold text-primary">{stat.value}</span>
+              <span className="text-sm text-muted-foreground text-center">{stat.label}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

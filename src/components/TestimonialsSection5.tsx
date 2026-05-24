@@ -1,25 +1,23 @@
 import React from "react"
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Separator } from "@/components/ui/separator"
 
 const testimonials = [
   {
-    quote: "СмартФлоу помог нам экономить более 10 часов в неделю благодаря автоматизации рутинных задач. Теперь не представляем работу без него!",
-    author: "Анна Петрова",
-    role: "Маркетинг-директор, ТехноСтарт",
-    image: "https://github.com/shadcn.png",
+    quote: "Благодаря Фонду смог открыть своё дело. Микрозайм получил быстро, условия очень выгодные. Специалисты помогли с документами и дали ценные советы по развитию бизнеса.",
+    author: "Александр Кириленко",
+    role: "Владелец кафе, г. Таганрог",
   },
   {
-    quote: "Этот инструмент изменил работу нашей удаленной команды. Автоматизация процессов работает просто невероятно.",
-    author: "Михаил Козлов",
-    role: "Основатель DigitalWave",
-    image: "https://github.com/shadcn.png",
+    quote: "Обратился за консультацией по налогообложению — всё объяснили понятно и бесплатно. Теперь постоянный клиент Фонда. Очень благодарен за профессионализм и внимательное отношение!",
+    author: "Ирина Соколова",
+    role: "ИП, сфера торговли, г. Таганрог",
   },
 ]
 
 export function TestimonialsSection5() {
   return (
-    <section className="py-16 md:py-24 bg-background" aria-labelledby="testimonial-title">
+    <section id="testimonials" className="py-16 md:py-24 bg-background" aria-labelledby="testimonial-title">
       <div className="container mx-auto px-6">
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-4 md:gap-5 max-w-xl text-center md:text-left">
@@ -27,7 +25,7 @@ export function TestimonialsSection5() {
               Отзывы
             </p>
             <h2 id="testimonial-title" className="text-3xl md:text-4xl font-bold">
-              Нам доверяют лучшие команды
+              Нам доверяют предприниматели Таганрога
             </h2>
           </div>
 
@@ -42,12 +40,11 @@ export function TestimonialsSection5() {
                 )}
                 <div className="flex flex-col gap-8">
                   <p className="text-foreground text-lg font-medium leading-7 md:text-left text-center">
-                    {testimonial.quote}
+                    "{testimonial.quote}"
                   </p>
                   <div className="flex md:flex-row flex-col items-center gap-5">
                     <Avatar className="h-14 w-14">
-                      <AvatarImage src={testimonial.image || "/placeholder.svg"} alt={testimonial.author} />
-                      <AvatarFallback>
+                      <AvatarFallback className="bg-primary/10 text-primary font-bold text-lg">
                         {testimonial.author
                           .split(" ")
                           .map((n) => n[0])
