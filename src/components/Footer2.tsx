@@ -16,8 +16,9 @@ export function Footer2() {
               </p>
               <div className="flex flex-col gap-2 text-sm text-muted-foreground">
                 <a href="tel:88634384084" className="hover:text-foreground transition-colors">8 (8634) 38-40-84</a>
+                <a href="tel:88634387010" className="hover:text-foreground transition-colors">8 (8634) 38-70-10</a>
                 <a href="mailto:fond-tagan@yandex.ru" className="hover:text-foreground transition-colors">fond-tagan@yandex.ru</a>
-                <p>ул. Петровская, 46, г. Таганрог</p>
+                <p>ул. Петровская, 46а, г. Таганрог</p>
               </div>
             </div>
 
@@ -45,8 +46,8 @@ export function Footer2() {
               <div className="flex flex-col gap-4">
                 <p className="font-semibold text-foreground text-sm">Режим работы</p>
                 <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-                  <p>Пн–Чт: 9:00–18:00</p>
-                  <p>Пт: 9:00–17:00</p>
+                  <p>Пн–Пт: 9:00–18:00</p>
+                  <p>Обед: 13:00–14:00</p>
                   <p>Сб–Вс: выходной</p>
                 </div>
               </div>
@@ -57,7 +58,7 @@ export function Footer2() {
 
           <div className="flex flex-col lg:flex-row justify-between items-center gap-6 text-center">
             <p className="text-muted-foreground text-sm order-2 md:order-1">
-              © 2025 Фонд поддержки предпринимательства г. Таганрога. Все права защищены.
+              © 2025 НКО МКК «Фонд поддержки предпринимательства города Таганрога». Все права защищены.
             </p>
             <nav
               className="flex flex-col md:flex-row items-center gap-6 md:gap-8 order-1 md:order-2"

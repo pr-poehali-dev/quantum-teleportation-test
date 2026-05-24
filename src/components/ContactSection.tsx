@@ -4,12 +4,12 @@ const contacts = [
   {
     icon: "MapPin",
     title: "Адрес",
-    lines: ["г. Таганрог, ул. Петровская, 46", "(уточните при записи)"],
+    lines: ["г. Таганрог,", "ул. Петровская, 46а"],
   },
   {
     icon: "Phone",
     title: "Телефон",
-    lines: ["8 (8634) 38-40-84", "Пн–Пт: 9:00–18:00"],
+    lines: ["8 (8634) 38-40-84", "8 (8634) 38-70-10"],
   },
   {
     icon: "Mail",
@@ -19,7 +19,7 @@ const contacts = [
   {
     icon: "Clock",
     title: "Режим работы",
-    lines: ["Пн–Чт: 9:00–18:00", "Пт: 9:00–17:00", "Сб–Вс: выходной"],
+    lines: ["Пн–Пт: 9:00–18:00", "Обед: 13:00–14:00", "Сб–Вс: выходной"],
   },
 ]
 
@@ -55,9 +55,9 @@ export function ContactSection() {
               <Icon name="Info" size={20} className="text-primary" />
             </div>
             <div className="flex flex-col gap-1">
-              <p className="font-semibold text-foreground text-sm">Муниципальная организация</p>
+              <p className="font-semibold text-foreground text-sm">НКО МКК «Фонд поддержки предпринимательства города Таганрога»</p>
               <p className="text-muted-foreground text-sm">
-                Фонд является муниципальной организацией, образующей инфраструктуру поддержки предпринимательства на территории города Таганрога. Основан в 1995 году.
+                Муниципальная некоммерческая организация — микрокредитная компания. Основана в 1995 году. Входит в инфраструктуру поддержки МСП Таганрога. Официальный сайт: <a href="https://tagfond.ru" target="_blank" rel="noopener noreferrer" className="text-primary underline">tagfond.ru</a>
               </p>
             </div>
           </div>

@@ -50,9 +50,9 @@ export function FeatureSection3() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { label: "Ставка по микрозаймам", value: "от 1% в год" },
+                { label: "Ставка по микрозаймам", value: "от 4,5% в год" },
                 { label: "Сумма займа", value: "до 5 000 000 ₽" },
-                { label: "Срок рассмотрения", value: "до 5 рабочих дней" },
+                { label: "Срок займа", value: "до 3 лет" },
                 { label: "Консультации", value: "Бесплатно" },
               ].map((item) => (
                 <div key={item.label} className="bg-muted rounded-lg p-4">
